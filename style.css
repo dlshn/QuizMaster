@@ -1,0 +1,32 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+main{
+    display: grid;
+    place-items: center;
+}
+
+
+.container{
+    width: 800px;
+    height: 300px;
+    border-width: 2px;
+    border-radius: 10px;
+    border-style: solid;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h1{
+    margin: auto;
+}
+footer{
+    border-style: solid;
+    
+
+}
