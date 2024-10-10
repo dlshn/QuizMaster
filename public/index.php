@@ -10,21 +10,27 @@
 <body>
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
-    <img src="/docs/4.0/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    <img src="src/images.png" width="30" height="30" class="d-inline-block align-top" alt="">
     Home
     </a>
 
 </nav>
 <main>
-    <div class="container mt-5 box">
-        
-        <h1><b>QuizMaster</b></h1>
+    <div class="main-container">
+        <div class="content">
+            <h1>Begin Your QuizMaster Journey</h1>
+            <p>Challenge your knowledge and earn a certificate. Take the quiz today and unlock your achievements!</p>
+            <div class="buttons">
+                <a href="quiz_page.php" class="btn btn-dark">Start Quiz</a>
+                <a href="learn_more.php" class="btn btn-outline-dark">Learn More</a>
+            </div>
+        </div>
 
     </div>
 </main>
 
 <footer>
-    <h3>footer</h3>
+    <p>&copy; 2024 QuizMaster. All Rights Reserved.</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

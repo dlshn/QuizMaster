@@ -8,25 +8,45 @@ main{
     display: grid;
     place-items: center;
 }
-
-
-.container{
-    width: 800px;
-    height: 300px;
-    border-width: 2px;
-    border-radius: 10px;
-    border-style: solid;
-    margin: auto;
+.main-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
 
+.content{
+    max-width: 800px;
+    /* height: 400px; */
+    padding: 50px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
-h1{
-    margin: auto;
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
 }
+
+p {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
 footer{
-    border-style: solid;
+    background-color: rgb(66, 66, 66);
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+    font-size: 14px;
     
 
 }
