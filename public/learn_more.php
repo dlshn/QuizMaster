@@ -22,13 +22,16 @@
     <main>
         <div class="main-container">
             <div class="content">
-                <h5><b>Welcome to the QuizMaster Challenge!</b><br>
+                <h2><b>Welcome to the QuizMaster Challenge!</b></h2><br>
+                <h5>
 
                     Before you begin, know that this quiz is your chance to test your knowledge and skills. Take your
                     time with each question and think carefully before answering. Whether you're familiar with the
                     subject or exploring something new, this is an opportunity to learn and grow. Once you complete the
-                    quiz, you’ll earn a certificate that reflects your dedication. Ready?<br>let’s <a href="quiz_page.php">get started!</a>
+                    quiz, you’ll earn a certificate that reflects your dedication. Ready?
+                    
                 </h5>
+                <a href="quiz_page.php" class="btn btn-dark mt-2">Start Quiz</a>
             </div>
 
         </div>
