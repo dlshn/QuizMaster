@@ -22,7 +22,7 @@
     <main>
         <div class="main-container">
             <div class="content">
-                <h2><b>Welcome to the QuizMaster Challenge!</b></h2><br>
+                <h2><b>Welcome to the QuizMaster!</b></h2><br>
                 <h5>
 
                     Before you begin, know that this quiz is your chance to test your knowledge and skills. Take your

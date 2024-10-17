@@ -1,21 +1,23 @@
-body{
+body {
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
     height: 100vh;
 }
-main{
+
+main {
     display: grid;
     place-items: center;
 }
-.main-container{
+
+.main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.content{
+.content {
     max-width: 800px;
     /* height: 400px; */
     padding: 50px;
@@ -25,12 +27,41 @@ main{
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
 }
 
+.container-quiz {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+.question {
+    max-width: 100%;
+    padding: 20px;
+    border: 1px solid #040000;
+    margin: 10px 0;
+    background-color: #f8f9fa;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.question p {
+    margin-bottom: 0px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #040000;
+}
+
+.question div {
+    margin-left: 25px;
+    margin-bottom: 5px;
+}
+
 h1 {
     font-size: 36px;
     margin-bottom: 20px;
 }
 
-p {
+.content p {
     font-size: 15px;
     margin-bottom: 20px;
 }
@@ -41,12 +72,12 @@ p {
     justify-content: center;
 }
 
-footer{
+footer {
     background-color: rgb(66, 66, 66);
     color: white;
     text-align: center;
     padding: 25px 0;
     font-size: 14px;
-    
+
 
 }
