@@ -1,3 +1,8 @@
+<?php
+session_start();
+$_SESSION = array(); // clear all session data using empty array
+session_destroy(); //remove all session entries
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,7 +110,7 @@
 
     <!--start content -->
     <div class="container-quiz">
-        <form action="quiz_page.php" method="POST">
+        <form action="quiz_process.php" method="POST">
 
             <div class="question">
 
@@ -113,17 +118,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q1" value="">
+                    <input class="form-check-input " type="radio" name="1" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q1" value="">
+                    <input class="form-check-input " type="radio" name="1" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q1" value="">
+                    <input class="form-check-input " type="radio" name="1" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -137,17 +142,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q2" value="">
+                    <input class="form-check-input " type="radio" name="2" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q2" value="">
+                    <input class="form-check-input " type="radio" name="2" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q2" value="">
+                    <input class="form-check-input " type="radio" name="2" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -160,17 +165,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q3" value="">
+                    <input class="form-check-input " type="radio" name="3" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q3" value="">
+                    <input class="form-check-input " type="radio" name="3" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q3" value="">
+                    <input class="form-check-input " type="radio" name="3" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -184,17 +189,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q4" value="">
+                    <input class="form-check-input " type="radio" name="4" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q4" value="">
+                    <input class="form-check-input " type="radio" name="4" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q4" value="">
+                    <input class="form-check-input " type="radio" name="4" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -211,17 +216,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q5" value="">
+                    <input class="form-check-input " type="radio" name="5" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q5" value="">
+                    <input class="form-check-input " type="radio" name="5" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q5" value="">
+                    <input class="form-check-input " type="radio" name="5" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -235,17 +240,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q6" value="">
+                    <input class="form-check-input " type="radio" name="6" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q6" value="">
+                    <input class="form-check-input " type="radio" name="6" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q6" value="">
+                    <input class="form-check-input " type="radio" name="6" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -261,17 +266,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q7" value="">
+                    <input class="form-check-input " type="radio" name="7" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q7" value="">
+                    <input class="form-check-input " type="radio" name="7" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q7" value="">
+                    <input class="form-check-input " type="radio" name="7" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -285,17 +290,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q8" value="">
+                    <input class="form-check-input " type="radio" name="8" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q8" value="">
+                    <input class="form-check-input " type="radio" name="8" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q8" value="">
+                    <input class="form-check-input " type="radio" name="8" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -310,17 +315,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q9" value="">
+                    <input class="form-check-input " type="radio" name="9" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q9" value="">
+                    <input class="form-check-input " type="radio" name="9" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q9" value="">
+                    <input class="form-check-input " type="radio" name="9" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
@@ -333,17 +338,17 @@
                 <br>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q10" value="">
+                    <input class="form-check-input " type="radio" name="10" value="1" required>
                     <label>1.sol01</label><br>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q10" value="">
+                    <input class="form-check-input " type="radio" name="10" value="2" required>
                     <label>2.sol02</label>
                 </div>
 
                 <div>
-                    <input class="form-check-input " type="radio" name="q10" value="">
+                    <input class="form-check-input " type="radio" name="10" value="3" required>
                     <label>3.sol03</label>
                 </div>
 
