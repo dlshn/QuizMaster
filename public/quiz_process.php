@@ -3,9 +3,11 @@ require_once '../src/config.php';
 session_start();
 $error_message = '';
 $num_of_questions = 10;
+$_SESSION['questions']=$num_of_questions;
 $answers = [];
 $correct_answers_array = [];
 $num_of_correct = 0;
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {  //store user's answers in array       
     for ($i = 1; $i <= $num_of_questions; $i++) {
@@ -40,6 +42,6 @@ if (count($correct_answers_array) == $num_of_questions) {
     }
 }
     $_SESSION["mark"] = $num_of_correct;
-    header("Location: certify.php");
+    header("Location: marks.php");
 
 ?>
