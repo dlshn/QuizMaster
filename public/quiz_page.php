@@ -26,13 +26,6 @@ session_destroy(); //remove all session entries
             place-items: center;
         }
 
-        .main-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
         .content {
             max-width: 800px;
             /* height: 400px; */
@@ -49,16 +42,25 @@ session_destroy(); //remove all session entries
             padding: 20px;
             margin: 10px;
             border: 1px solid black;
+            
         }
+        /* form {
+            display: flex;
+            flex-direction: column;
+            
+
+        } */
 
         .question {
-            max-width: 100%;
+            max-width: 80%;
             padding: 20px;
             border: 1px solid #040000;
-            margin: 10px 0;
+            margin: 10px auto;
             background-color: #f8f9fa;
             box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            
+            
         }
 
         .question p {
@@ -103,261 +105,179 @@ session_destroy(); //remove all session entries
 <body>
     <nav class="navbar navbar-dark bg-dark">
         <a class="navbar-brand" href="index.php">
-            <img src="src/images.png" width="30" height="30" class="d-inline-block align-top" alt="">
-            Home
+            <img src="src/exit.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+            Exit
         </a>
     </nav>
 
     <!--start content -->
     <div class="container-quiz">
         <form action="quiz_process.php" method="POST">
-
             <div class="question">
-
-                <p><b>Question 01</b><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nisi?</p>
-                <br>
-
+                <p><b>Question 01</b><br>What is the capital city of Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="1" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="1" value="1" required>
+                    <label>1. Sri Jayawardenepura Kotte</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="1" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="1" value="2">
+                    <label>2. Colombo</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="1" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="1" value="3">
+                    <label>3. Galle</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 02</b><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, nisi? Lorem
-                    ipsum, dolor sit amet consectetur adipisicing elit. Iure omnis voluptate exercitationem vitae
-                    dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita quod magni similique placeat!</p>
-                <br>
-
+                <p><b>Question 02</b><br>What is the national sport of Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="2" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="2" value="1" required>
+                    <label>1. Cricket</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="2" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="2" value="2">
+                    <label>2. Football</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="2" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="2" value="3">
+                    <label>3. Volleyball</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 03</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, culpa.</p>
-                <br>
-
+                <p><b>Question 03</b><br>What is the currency used in Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="3" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="3" value="1" required>
+                    <label>1. Dollar</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="3" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="3" value="2">
+                    <label>2. Rupee</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="3" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="3" value="3">
+                    <label>3. Pound</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 04</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, harum.
-                </p>
-                <br>
-
+                <p><b>Question 04</b><br>What is the highest mountain in Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="4" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="4" value="1" required>
+                    <label>1. Pidurutalagala</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="4" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="4" value="2">
+                    <label>2. Kirigalpotta</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="4" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="4" value="3">
+                    <label>3. Thotupola Kanda</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 05</b><br>Lorem ipsum dolorem Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Delectus aut pariatur dolor illum labore itaque, tenetur alias cum soluta esse, inventore, harum
-                    provident? Unde nobis velit repellendus veniam, ullam veritatis! animi quasi, reiciendis, quos,
-                    quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, harum.
-                </p>
-                <br>
-
+                <p><b>Question 05</b><br>What is the longest river in Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="5" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="5" value="1" required>
+                    <label>1. Kelani River</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="5" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="5" value="2">
+                    <label>2. Mahaweli River</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="5" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="5" value="3">
+                    <label>3. Kalu River</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 06</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, harum.
-                </p>
-                <br>
-
+                <p><b>Question 06</b><br>Who is considered the Father of Free Education in Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="6" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="6" value="1" required>
+                    <label>1. D.S. Senanayake</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="6" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="6" value="2">
+                    <label>2. C.W.W. Kannangara</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="6" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="6" value="3">
+                    <label>3. Ponnambalam Ramanathan</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 07</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem, ipsum dolor sit Lorem ipsum dolor, sit amet consectetur
-                    adipisicing elit. Officia repellendus in illum recusandae iste atque? amet consectetur adipisicing
-                    elit. Sunt, harum.
-                </p>
-                <br>
-
+                <p><b>Question 07</b><br>What is the national flower of Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="7" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="7" value="1" required>
+                    <label>1. Jasmine</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="7" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="7" value="2">
+                    <label>2. Orchid</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="7" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="7" value="3">
+                    <label>3. Blue Water Lily</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 08</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, harum.
-                </p>
-                <br>
-
+                <p><b>Question 08</b><br>What is the ancient name of Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="8" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="8" value="1" required>
+                    <label>1. Ceylon</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="8" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="8" value="2">
+                    <label>2. India</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="8" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="8" value="3">
+                    <label>3. Malaya</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 09</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid expedita
-                    quod magni similique placeat! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt, harum.
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus excepturi blanditiis ipsum
-                    veritatis. Amet fugit vel eos consectetur quo! Nesciunt.</p>
-                <br>
-
+                <p><b>Question 09</b><br>Who is the first Prime Minister of Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="9" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="9" value="1" required>
+                    <label>1. D.S. Senanayake</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="9" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="9" value="2">
+                    <label>2. Sirimavo Bandaranaike</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="9" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="9" value="3">
+                    <label>3. J.R. Jayewardene</label><br>
                 </div>
-
             </div>
 
             <div class="question">
-
-                <p><b>Question 10</b><br>Lorem ipsum dolorem animi quasi, reiciendis, quos, quibusdam aliquid
-                    expeditam.?</p>
-                <br>
-
+                <p><b>Question 10</b><br>What is the national bird of Sri Lanka?</p><br>
                 <div>
-                    <input class="form-check-input " type="radio" name="10" value="1" required>
-                    <label>1.sol01</label><br>
+                    <input class="form-check-input" type="radio" name="10" value="1" required>
+                    <label>1. Eagle</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="10" value="2" required>
-                    <label>2.sol02</label>
+                    <input class="form-check-input" type="radio" name="10" value="2">
+                    <label>2. Parrot</label><br>
                 </div>
-
                 <div>
-                    <input class="form-check-input " type="radio" name="10" value="3" required>
-                    <label>3.sol03</label>
+                    <input class="form-check-input" type="radio" name="10" value="3">
+                    <label>3. Sri Lankan Junglefowl</label><br>
                 </div>
-
             </div>
-
-            <input class="btn btn-primary" type="submit" value="Submit Quiz">
-
-
+            <div class="text-center">
+                <input class="btn btn-primary " type="submit" value="Submit Quiz">
+            </div>
+            
         </form>
+
 
 
         
