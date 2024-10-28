@@ -15,7 +15,7 @@
         <a class="navbar-brand" href="index.php">
             <img src="src/images.png" width="30" height="30"
                 class="d-inline-block align-top" alt="">
-            Home
+                QuizMaster
         </a>
 
     </nav>

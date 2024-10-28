@@ -16,10 +16,9 @@ session_start();
 
 <body>
     <nav class="navbar navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.php">
-            <img src="src/images.png" width="30" height="30"
-                class="d-inline-block align-top" alt="">
-            Home
+        <a class="navbar-brand" href="#">
+            <img src="src/images.png" width="30" height="30" class="d-inline-block align-top" alt="">
+            QuizMaster
         </a>
     </nav>
 
@@ -29,18 +28,20 @@ session_start();
                 <h3><b>Quiz completed. Your mark is displayed below.</b></h3><br>
                 <h4>
 
-                Your mark is <div style="color: red;" class="text-center mt-3"><?php echo htmlspecialchars($_SESSION["mark"]);?>/<?php echo htmlspecialchars($_SESSION["questions"]); ?></div>
-                    
+                    Your mark is <div style="color: red;" class="text-center mt-3">
+                        <?php echo htmlspecialchars($_SESSION["mark"]); ?>/<?php echo htmlspecialchars($_SESSION["questions"]); ?>
+                    </div>
+
                 </h4>
                 <hr>
-                <?php if($_SESSION['mark']>=$_SESSION['questions']/2): ?>
+                <?php if ($_SESSION['mark'] >= $_SESSION['questions'] / 2): ?>
                     <h5>Add personal details for certificate.</h5>
                     <a href="details.php" class="btn btn-dark mt-2">Add Details</a>
-                                       
-                <?php endif;?>
-                <?php if($_SESSION['mark']<$_SESSION['questions']/2): ?>
+
+                <?php endif; ?>
+                <?php if ($_SESSION['mark'] < $_SESSION['questions'] / 2): ?>
                     <h5>your mark is not enough for certificate generate, sorry.</h5>
-                <?php endif;?>
+                <?php endif; ?>
             </div>
 
         </div>

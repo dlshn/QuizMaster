@@ -14,7 +14,7 @@ session_start();
 <nav class="navbar navbar-dark bg-dark">
     <a class="navbar-brand" href="#">
     <img src="src/images.png" width="30" height="30" class="d-inline-block align-top" alt="">
-    Home
+    QuizMaster
     </a>
 
 </nav>
